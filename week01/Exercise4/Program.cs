@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 class Program
@@ -9,7 +8,7 @@ class Program
 
         int number;
         List<int> numbers = new List<int>();
-        int sum = 0;
+        float sum = 0;
         
         do
         {
@@ -26,11 +25,10 @@ class Program
 
         float average = sum / numbers.Count;
         numbers.Sort();
-        int largest = numbers[numbers.Count -1];
+        float largest = numbers[numbers.Count -1];
 
         Console.WriteLine($"The sum is: {sum}");
-        Console.WriteLine($"The average is: {average}");
+        Console.WriteLine($"The average is: {average:F2}");
         Console.WriteLine($"The largest number is: {largest}");
-        Console.WriteLine(numbers.Count);
     }
 }
