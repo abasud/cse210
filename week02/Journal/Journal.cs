@@ -14,6 +14,17 @@ public class Journal
         Console.WriteLine(newEntry._prompt);
         Console.Write("> ");
         newEntry._entry = Console.ReadLine();
+
+        Console.Write("Do you want to add an image? ");
+        string imageOption = Console.ReadLine();
+        imageOption = imageOption.ToLower();
+
+        if (imageOption == "yes")
+        {
+            Console.Write("Enter image file path or URL: ");
+            newEntry._imagePath = Console.ReadLine();
+        }
+
         _entries.Add(newEntry);
     }
     public void DisplayAll()
@@ -32,7 +43,7 @@ public class Journal
         {
             foreach (Entry entry in _entries)
             {
-                outputFile.WriteLine($"{entry._date}|{entry._prompt}|{entry._entry}");
+                outputFile.WriteLine($"{entry._date}|{entry._prompt}|{entry._entry}|{entry._imagePath}");
             }            
         }
     }
@@ -49,12 +60,13 @@ public class Journal
             foreach (string line in lines)
             {
                 string[] parts = line.Split('|');
-                if (parts.Length == 3)
+                if (parts.Length == 4)
                 {
                     Entry entry = new Entry();
                     entry._date = parts[0];
                     entry._prompt = parts[1];
                     entry._entry = parts[2];
+                    entry._imagePath = parts[3];
 
                     _entries.Add(entry);
                 }

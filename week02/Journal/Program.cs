@@ -1,3 +1,5 @@
+// I added the option to enter the URL or path of an image related to what was written in each entry.
+
 using System;
 using System.IO;
 using System.Collections.Generic;
