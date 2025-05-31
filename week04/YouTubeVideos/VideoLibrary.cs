@@ -1,4 +1,4 @@
-public class Videos
+public class VideoLibrary
 {
     public List<Video> _videoList = new List<Video>();
 

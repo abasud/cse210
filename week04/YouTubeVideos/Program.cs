@@ -70,7 +70,7 @@ class Program
 
         // ****************************************************************************************
 
-        Videos videos = new Videos();
+        VideoLibrary videos = new VideoLibrary();
         videos._videoList.Add(video1);
         videos._videoList.Add(video2);
         videos._videoList.Add(video3);
