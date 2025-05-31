@@ -8,6 +8,7 @@ public class VideoLibrary
         {
             Console.WriteLine();
             video.DisplayVideo();
+            Console.WriteLine($"Number of Comments: {video.numberComments()}");
             Console.WriteLine();
         }
     }

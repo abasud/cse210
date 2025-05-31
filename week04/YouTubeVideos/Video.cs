@@ -5,6 +5,11 @@ public class Video
     public int _length = 0;
     public List<Comments> _comments = new List<Comments>();
 
+    public int numberComments()
+    {
+        return _comments.Count();
+    }
+
     public void DisplayVideo()
     {
         Console.WriteLine($"Title: {_title}");
