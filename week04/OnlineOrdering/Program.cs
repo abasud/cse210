@@ -23,7 +23,7 @@ class Program
         Console.WriteLine();
         order1.ShippingLabel();
         Console.WriteLine();
-        Console.WriteLine($"Total price: ${order1.TotalCost()}");
+        Console.WriteLine($"Total price: ${order1.TotalCost():F2}");
         Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
 
         Address address2 = new Address();
@@ -45,7 +45,7 @@ class Program
         Console.WriteLine();
         order2.ShippingLabel();
         Console.WriteLine();
-        Console.WriteLine($"Total price: ${order2.TotalCost()}");
+        Console.WriteLine($"Total price: ${order2.TotalCost():F2}");
         Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
 
     }
