@@ -5,8 +5,6 @@ using System.IO;
 public class Journal
 {
     List<Entry> _entries = new List<Entry>();
-
-    Entry newEntry = new Entry();
     
     public void AddEntry()
     {
