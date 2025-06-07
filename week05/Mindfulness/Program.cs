@@ -1,3 +1,6 @@
+// I added a validation to ensure no random prompts are selected in Reflecting and Listing activities
+// until they have all been used at least once in the same session.
+
 using System;
 
 class Program
