@@ -1,0 +1,2 @@
+100
+SimpleGoal|priesthood|priesthood|100|True

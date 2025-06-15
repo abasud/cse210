@@ -1,0 +1,4 @@
+320
+SimpleGoal|priesthood|priesthood|100|True
+EternalGoal|scriptures|scriptures|20
+ChecklistGoal|temple|temple|50|2|100|2
